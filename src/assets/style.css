@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto",sans-serif;
+    text-transform: none;
+    border: none;
+    outline: none;
+    transition: 0.2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    background: #010103;
+}
+.header .logo img{
+    /* width: 100px; */
+    max-height: 100px;
+}
+
+.header{
+    background-color: #010103;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 7%;
+    border-bottom: 0.2rem solid #fccf49;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    /* position: fixed; */
+}
+
+.header .navbar {
+    display: flex;
+    padding: 1px 1px;
+    gap: 1.5em;
+}
+
+.header .navbar a{
+    margin: 0 1rem;
+    color: #fccf49;
+    font-size: 1.6rem;
+    outline: none;
+    text-decoration: none;
+}
+.navbar>a:hover{
+    border-bottom:0.2rem solid #fccf49;
+}
+
+.header .icons{
+    display: flex;
+    gap: 1.6rem;
+}
+
+.header .icons div{
+    color: #fff;
+    margin: 5px;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.header .icons div:hover{
+    color: #fccf49;
+}
+
+.header .search-form{
+    position: absolute;
+    top: 19%;
+    right: 7%;
+    background: #fff;
+    width: 20%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.header .search-form.active{
+    transform: scaleY(1);
+}
+
+.header .search-form label{
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color: #13131a;
+}
+
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color: #010103;
+    padding: 1rem;
+    text-transform: none;
+}
+
+.header .search-form.active{
+    transform: scaleY(1);
+}
+
+.header .search-form label:hover{
+    color: #fccf49;
+}
+
+
+/* working on line btn  */
+.cart-item-container{
+    position: absolute;
+    top: 16.3%;
+    right: -100%;
+    width: 35rem;
+    height: calc(90vh - 9.5rem);
+    background-color: #fff;
+    padding: 0 1.5rem;
+    border-radius: 1rem 0 0rem 5rem;
+}
+
+.cart-item-container.active{
+    right: 0;
+}
+
+.cart-item{
+    position: relative;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.fa-times{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.fa-times:hover{
+    color: #fccf49;
+}
+
+.cart-item img{
+    height: 7rem;
+}
+
+.content{
+    font-size: 1.6rem;
+    padding-bottom: 0.5rem;
+}
+.content .price{
+    color: #fccf49;
+}
+
+.btn{
+    width: 80%;
+    position: absolute;
+    text-align: center;
+    margin-left: 3rem;
+    background-color: #fccf49;
+    padding: 2rem;
+    border-radius: 1em;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #fff;
+    bottom: 5%;
+}
+
+#menu-btn{
+    display: none;
+}
+@media (max-width: 768px){
+    #menu-btn{
+        display: inline-block;
+    }
+    
+}
