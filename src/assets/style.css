@@ -20,7 +20,7 @@ body{
     overflow-x: hidden;
     background: #010103;
 }
-.header .logo img{
+.logo img{
     /* width: 100px; */
     max-height: 100px;
 }
@@ -40,13 +40,13 @@ body{
     /* position: fixed; */
 }
 
-.header .navbar {
+.navbar {
     display: flex;
     padding: 1px 1px;
     gap: 1.5em;
 }
 
-.header .navbar a{
+.navbar a{
     margin: 0 1rem;
     color: #fccf49;
     font-size: 1.6rem;
@@ -57,23 +57,23 @@ body{
     border-bottom:0.2rem solid #fccf49;
 }
 
-.header .icons{
+.icons{
     display: flex;
     gap: 1.6rem;
 }
 
-.header .icons div{
+.icons div{
     color: #fff;
     margin: 5px;
     font-size: 2.5rem;
     cursor: pointer;
 }
 
-.header .icons div:hover{
+.icons div:hover{
     color: #fccf49;
 }
 
-.header .search-form{
+.search-form{
     position: absolute;
     top: 19%;
     right: 7%;
@@ -87,18 +87,18 @@ body{
     transform-origin: top;
 }
 
-.header .search-form.active{
+.search-form.active{
     transform: scaleY(1);
 }
 
-.header .search-form label{
+.search-form label{
     cursor: pointer;
     font-size: 2.2rem;
     margin-right: 1.5rem;
     color: #13131a;
 }
 
-.header .search-form input{
+.search-form input{
     height: 100%;
     width: 100%;
     font-size: 1.6rem;
@@ -107,11 +107,11 @@ body{
     text-transform: none;
 }
 
-.header .search-form.active{
+.search-form.active{
     transform: scaleY(1);
 }
 
-.header .search-form label:hover{
+.search-form label:hover{
     color: #fccf49;
 }
 
@@ -119,16 +119,17 @@ body{
 /* working on line btn  */
 .cart-item-container{
     position: absolute;
-    top: 16.3%;
+    top: 100%;
     right: -100%;
     width: 35rem;
-    height: calc(90vh - 9.5rem);
+    height: calc(100vh - 9.5rem);
     background-color: #fff;
     padding: 0 1.5rem;
     border-radius: 1rem 0 0rem 5rem;
 }
 
 .cart-item-container.active{
+    top: 16%;
     right: 0;
 }
 
@@ -159,7 +160,7 @@ body{
     font-size: 1.6rem;
     padding-bottom: 0.5rem;
 }
-.content .price{
+.price{
     color: #fccf49;
 }
 
@@ -176,15 +177,31 @@ body{
     color: #fff;
     bottom: 5%;
 }
-
 #menu-btn{
     display: none;
 }
 
+/* .navbar{
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #000;
+    width: 30rem;
+    height: calc(100vh - 9.5rem);
+}
+
+.navbar.active{
+    right: 0;
+}
+
+.navbar a{
+    color: #fff;
+    display: block;
+
+}
 
 @media (max-width: 768px){
     #menu-btn{
-        display: inline-block;
+        display: block;
     }
-    
-}
+} */
