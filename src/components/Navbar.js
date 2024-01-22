@@ -21,7 +21,6 @@ const Navbar = () => {
   const Barsbtn=()=>{
     navbarRef.current.classList.toggle('active')
     console.log('nav')
-    
   }
   return (
     <>
