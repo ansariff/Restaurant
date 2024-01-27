@@ -59,7 +59,7 @@ const Navbar = () => {
         </div>
       </div>
     ))}
-    <a href="##" className='btn'>Check Out</a>
+    <a href="###" className='btn'>Check Out</a>
     </div>
     </header>
     
