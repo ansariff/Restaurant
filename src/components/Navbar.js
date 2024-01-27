@@ -7,7 +7,7 @@ const Navbar = () => {
   const navbarRef=useRef();
 
   // work on search btn 
-  const SearchHandle=()=>{
+  const Srchbtn=()=>{
     searchRef.current.classList.toggle('active') // have a look here
     console.log('srch')
   }
@@ -39,7 +39,7 @@ const Navbar = () => {
     </nav>
 {/* // icons  */}
     <div className="icons">
-    <div className="fas fa-search" onClick={SearchHandle}></div>
+    <div className="fas fa-search" onClick={Srchbtn}></div>
     <div className="fas fa-shopping-cart"  onClick={Cartbtn}></div>
     <div className="fa-solid fa-bars" id='menu-btn' onClick={Barsbtn}></div>
     </div>
@@ -59,7 +59,7 @@ const Navbar = () => {
         </div>
       </div>
     ))}
-    <a href="#" className='btn'>Check Out</a>
+    <a href="##" className='btn'>Check Out</a>
     </div>
     </header>
     
